@@ -1,0 +1,126 @@
+:root {
+  --bgColor: #141496;
+  --bgColorDiff: #050533;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+body{
+    background:url('bg_signUp.jpg') no-repeat ;
+    background-size:cover;
+    overflow-x:hidden;
+
+}
+.con {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: var(--bgColor); */
+}
+.formContainer {
+  width: 350px;
+  background: white;
+  margin: 20px;
+  padding: 30px 10px 10px 10px;
+  background:rgba(255, 255, 255,0.07);
+  box-shadow:3px 3px 1px rgba(255, 255, 255,0.01) ; 
+  border-radius:2em;
+  /* border-radius: 1rem; */
+}
+
+.formContainer h1 {
+  font-size: 25px;
+  font-family: sans-serif;
+  color: grey;
+  border-bottom: 1px solid rgba(255, 255, 255,0.2);
+  padding-bottom: 15px;
+  text-align: center;
+}
+.formContainer form {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+}
+form input {
+  color:white;
+  outline: none;
+  background:rgba(255, 255, 255,0.1);
+  border: 1px solid rgba(255, 255, 255,0.2);
+  border-radius:.5rem;
+  height: 40px;
+  min-width: 100%;
+  margin: 10px 0;
+  padding: 5px 0 5px 10px;
+}
+form input:focus {
+  border-color: white;
+}
+form button{
+  outline: none;
+  border: none;
+  font-size: .9rem;
+  min-width: 100%;
+  padding: 8px 10px 8px 15px;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255,0.05);
+  margin: 6% 0px;
+  height: 40px;
+  background:#800080;
+  color:grey;
+  font-weight:700;
+  cursor:pointer;
+}
+button:hover{
+  background:rgba(255, 255, 255,0.05);
+  color:#800080;
+  transition:all 1s linear .1s;
+}
+button:active{
+ background:purple;
+}
+form div {
+  margin: 10px 0 0 0;
+}
+a{
+  color:red;
+}
+a:hover{
+  color:#800080;
+}
+a:active{
+  color:black;
+}
+.moveother{
+  font-size:.9rem;
+  color:black;
+}
+
+//media Query
+
+@media (max-width: 450px) {
+  .formContainer {
+    min-width: 80vw;
+  }
+  .formContainer h1 {
+    font-size: larger;
+  }
+  .con{
+    background:url('bg_signUp-short.jpg') no-repeat ;
+  }
+}
+@media (min-width: 600px) {
+  .formContainer {
+    margin-right:30vw;
+  }
+}
+
+
+
